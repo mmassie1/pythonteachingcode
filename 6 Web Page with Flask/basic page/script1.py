@@ -16,5 +16,9 @@ def home():
 def about():
     return render_template("about.html")
 
+@app.route('/morgan/')
+def morgan():
+    return render_template("massie.html")
+
 if __name__=="__main__":
     app.run(debug=True)
