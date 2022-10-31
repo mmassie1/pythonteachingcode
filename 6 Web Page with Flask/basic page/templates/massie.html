@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="home">
+    <h1>Massie ˙ᵕ˙</h1>
+    <p>꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶︶꒷꒦˚꒦꒷︶˚︶︶꒷꒦˚︶˚︶︶꒷꒦꒷꒦꒷︶˚︶꒷꒦
+    <p>This is Morgan's Flask Website Demo Project!
+    <p> Here's some text art of a cat:
+    <p> ♡  (^._.^)⟆
+         {{myName}}</p>
+    <p><form action="{{ url_for('greet') }}" method='post'>
+        Please type your name: <input type='text' name='myName'><br>
+        <input type='submit' value='Submit'>
+        </form></p>
+</div>
+{% endblock %}
